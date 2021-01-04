@@ -10,13 +10,13 @@ module.exports = {
   // Theme to use
   theme: 'meteorlxy',
   themeConfig: {
-    lang: 'ja-JP',
+    lang: 'en-US',
     personalInfo: {
       // Nickname
       nickname: 'げんし',
       description: 'genshi0916',
       email: 'genshi0916@gmail.com',
-      avatar: '',
+      avatar: '/images/genshi.jpg',
       sns: {
         github: {
           account: 'Genshi0916',
@@ -68,7 +68,11 @@ module.exports = {
       home: true,
       posts: true,
     },
-
   },
+
+  head: [
+    ['link', { href: '/css/style.css', rel: 'stylesheet'}],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.jpg' }],
+  ]
 
 }
